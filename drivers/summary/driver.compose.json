@@ -1,0 +1,107 @@
+{
+  "name": {
+    "en": "Energy summary",
+    "sv": "Energisammanställning"
+  },
+  "images": {
+    "large": "drivers/summary/assets/images/large.png",
+    "small": "drivers/summary/assets/images/small.png"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power.pv",
+    "measure_power",
+    "measure_power.battery",
+    "measure_power.consumption",
+    "power_pv.dcA",
+    "power_pv.dcB"
+  ],
+  "capabilitiesOptions": {
+    "measure_power.pv": {
+      "title": {
+        "en": "PV power",
+        "sv": "Solceller"
+      }
+    },
+    "measure_power": {
+      "title": {
+        "en": "Grid power",
+        "sv": "Uttag elnät"
+      }
+    },
+    "measure_power.battery": {
+      "title": {
+        "en": "Battery power",
+        "sv": "Batteriladdning effekt"
+      }
+    },
+    "measure_power.consumption": {
+      "title": {
+        "en": "Consumption",
+        "sv": "Konsumtion"
+      }
+    }
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Settings",
+        "nl": "Instellingen",
+        "sv": "Inställningar"
+      },
+      "children": [
+        {
+          "id": "polling",
+          "type": "number",
+          "value": 5,
+          "step": 1,
+          "attr": {
+            "min": 2,
+            "max": 3600
+          },
+          "label": {
+            "en": "Polling",
+            "nl": "Polling",
+            "sv": "Uppdateringsfrekvens"
+          }
+        },
+        {
+          "id": "show_mpp",
+          "type": "radio",
+          "label": {
+            "en": "Show MPP information"
+          },
+          "value": "no",
+          "values": [
+            {
+              "id": "yes",
+              "label": {
+                "en": "Yes"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "en": "No"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

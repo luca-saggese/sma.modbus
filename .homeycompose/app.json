@@ -1,0 +1,78 @@
+{
+  "id": "sma.modbus",
+  "sdk": 3,
+  "brandColor": "#015a93",
+  "name": {
+    "en": "SMA Energy",
+    "sv": "SMA Energy"
+  },
+  "description": {
+    "en": "My home. My energy. Our climate.",
+    "sv": "Mitt hem. Min energi. Vårt klimat."
+  },
+  "tags": {
+    "en": [
+      "sma",
+      "inverter",
+      "solar",
+      "sunny boy",
+      "tripower",
+      "pv",
+      "energy",
+      "energy meter",
+      "home manager",
+      "modbus"
+    ],
+    "sv": [
+      "sma",
+      "växelriktare",
+      "sol",
+      "solceller",
+      "sunny boy",
+      "tripower",
+      "energi",
+      "batteri",
+      "el",
+      "elmätare",
+      "modbus"
+    ]
+  },
+  "version": "2.4.0",
+  "compatibility": ">=5.0.0",
+  "author": {
+    "name": "Richard Barkestam",
+    "email": "richard@barkestam.se"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Richard Barkestam",
+        "email": "richard@barkestam.se"
+      },
+      {
+        "name": "Jelger Haanstra",
+        "email": "homey@solidewebservices.com"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "RBarkestam"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/ricott/sma.modbus/issues"
+  },
+  "source": "https://github.com/ricott/sma.modbus",
+  "homeyCommunityTopicId": 696,
+  "images": {
+    "large": "./assets/images/large.png",
+    "small": "./assets/images/small.png"
+  },
+  "category": "energy",
+  "dependencies": {
+    "net": "*"
+  }
+}
