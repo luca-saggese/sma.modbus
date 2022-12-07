@@ -11,3 +11,10 @@ discoveryQuery.discover();
 discoveryQuery.on('inverterInfo', result => {
     console.log('inverterInfo: ', result);
 });
+
+discoveryQuery.on('deviceInfo',(info)=>{
+  console.log('deviceInfo', info)
+})
+discoveryQuery.on('deviceReadings',(info)=>{
+  console.log('deviceReadings', info)
+})
